@@ -1,0 +1,33 @@
+<div
+  class="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-6"
+>
+  <!-- Título -->
+  <h1 class="text-4xl font-bold text-gray-800 mb-4">
+    Bienvenido al Sistema de Gestión Escolar
+  </h1>
+  <p class="text-lg text-gray-600 mb-8">
+    Selecciona una opción para continuar:
+  </p>
+
+  <!-- Contenedor de botones -->
+  <div class="flex gap-6">
+    <!-- Botón para agregar alumnos -->
+    <button
+      (click)="irACrearAlumno()"
+      class="flex items-center justify-center gap-2 bg-green-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-600 transition-colors"
+    >
+      <span class="text-xl">➕</span>
+      <span class="text-lg">Agregar Alumnos</span>
+    </button>
+
+    <!-- Botón para ver alumnos (deshabilitado por ahora) -->
+    <button
+      (click)="irAVerAlumnos()"
+      disabled
+      class="flex items-center justify-center gap-2 bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md opacity-50 cursor-not-allowed"
+    >
+      <span class="text-xl">👀</span>
+      <span class="text-lg">Ver Alumnos</span>
+    </button>
+  </div>
+</div>
