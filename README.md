@@ -1,6 +1,6 @@
 # Sistema de Gestión Escolar
 
-Un sistema web desarrollado con **Angular** (Frontend) y **Django** (Backend) para la gestión de alumnos PARA UNA PRUEBA DE TRABAJO
+Un sistema web desarrollado con **Angular** (Frontend) y **Django** (Backend) para la gestión de alumnos PARA UNA PRUEBA DE TRABAJO NO ES UN CODIGO PARA USO EXTERNO A LA PRUEBA QUE ESTOY REALIZANDO
 
 ---
 
