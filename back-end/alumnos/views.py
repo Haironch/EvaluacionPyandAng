@@ -23,3 +23,12 @@ def consultar_alumno(request, grado):
     alumnos = Alumno.objects.filter(grado=grado)
     serializer = AlumnoSerializer(alumnos, many=True)
     return Response(serializer.data)
+
+# Nueva función para obtener todos los alumnos
+@api_view(['GET'])
+@authentication_classes([BasicAuthentication])
+@permission_classes([IsAuthenticated])
+def obtener_todos_alumnos(request):
+    alumnos = Alumno.objects.all()
+    serializer = AlumnoSerializer(alumnos, many=True)
+    return Response(serializer.data)

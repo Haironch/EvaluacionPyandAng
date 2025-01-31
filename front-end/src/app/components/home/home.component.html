@@ -8,7 +8,6 @@
   <p class="text-lg text-gray-600 mb-8">
     Selecciona una opción para continuar:
   </p>
-
   <!-- Contenedor de botones -->
   <div class="flex gap-6">
     <!-- Botón para agregar alumnos -->
@@ -19,12 +18,10 @@
       <span class="text-xl">➕</span>
       <span class="text-lg">Agregar Alumnos</span>
     </button>
-
-    <!-- Botón para ver alumnos (deshabilitado por ahora) -->
+    <!-- Botón para ver alumnos -->
     <button
       (click)="irAVerAlumnos()"
-      disabled
-      class="flex items-center justify-center gap-2 bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md opacity-50 cursor-not-allowed"
+      class="flex items-center justify-center gap-2 bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 transition-colors"
     >
       <span class="text-xl">👀</span>
       <span class="text-lg">Ver Alumnos</span>
